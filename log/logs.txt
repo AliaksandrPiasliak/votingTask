@@ -1,0 +1,69 @@
+2017-04-29 18:33:03 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:33:05 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=3}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:33:05 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:45:56 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:45:57 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=3}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:45:57 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:46:05 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:46:06 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=3}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:46:06 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:46:59 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:47:01 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=3}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:47:01 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:51:01 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:51:03 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=3}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:51:03 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:51:04 INFO  VotingClient:91 - Vote registered
+2017-04-29 18:51:04 INFO  VotingClient:72 - Testing show statistics for voting
+2017-04-29 18:51:04 INFO  VotingClient:78 - Statistics for voting: To be or not to be
+2017-04-29 18:51:04 INFO  VotingClient:80 - Option Yes: 4 votes
+2017-04-29 18:51:04 INFO  VotingClient:80 - Option No: 0 votes
+2017-04-29 18:51:11 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:51:12 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=4}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:51:12 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:51:12 INFO  VotingClient:91 - Vote registered
+2017-04-29 18:51:12 INFO  VotingClient:72 - Testing show statistics for voting
+2017-04-29 18:51:12 INFO  VotingClient:78 - Statistics for voting: To be or not to be
+2017-04-29 18:51:12 INFO  VotingClient:80 - Option Yes: 5 votes
+2017-04-29 18:51:12 INFO  VotingClient:80 - Option No: 0 votes
+2017-04-29 18:58:12 INFO  VotingClient:36 - Testing create voting
+2017-04-29 18:58:14 INFO  VotingClient:46 - Voting{votingTopic='Who is the best player of the Premier League 2017', votingLink='null', status='Created', optionList=[Option{optionText='Eden Hazard', optionSummary=0}, Option{optionText='Harry Kane', optionSummary=0}, Option{optionText='Romelu Lukaku', optionSummary=0}]}
+2017-04-29 18:58:14 INFO  VotingClient:50 - Testing start voting
+2017-04-29 18:58:14 INFO  VotingClient:54 - Voting Who is the best player of the Premier League 2017 started. Link for voting: http://localhost:8080/VotingTask/voting/15
+2017-04-29 18:58:14 INFO  VotingClient:58 - Testing close voting
+2017-04-29 18:58:14 INFO  VotingClient:62 - Voting Voting 1stopped.
+2017-04-29 18:58:14 INFO  VotingClient:66 - Testing find voting
+2017-04-29 18:58:14 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=5}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 18:58:14 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 18:58:14 INFO  VotingClient:91 - Vote registered
+2017-04-29 18:58:14 INFO  VotingClient:72 - Testing show statistics for voting
+2017-04-29 18:58:14 INFO  VotingClient:78 - Statistics for voting: To be or not to be
+2017-04-29 18:58:14 INFO  VotingClient:80 - Option Yes: 6 votes
+2017-04-29 18:58:14 INFO  VotingClient:80 - Option No: 0 votes
+2017-04-29 19:02:26 INFO  VotingClient:66 - Testing find voting
+2017-04-29 19:02:26 INFO  VotingClient:68 - Voting{votingTopic='To be or not to be', votingLink='http://localhost:8080/VotingTask/voting/10', status='Opened', optionList=[Option{optionText='Yes', optionSummary=6}, Option{optionText='No', optionSummary=0}]}
+2017-04-29 19:02:26 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 19:03:43 INFO  VotingClient:66 - Testing find voting
+2017-04-29 19:03:43 INFO  VotingClient:68 - Voting{votingTopic='Who is the best player of the Premier League 2017', votingLink='http://localhost:8080/VotingTask/voting/15', status='Opened', optionList=[Option{optionText='Eden Hazard', optionSummary=0}, Option{optionText='Harry Kane', optionSummary=0}, Option{optionText='Romelu Lukaku', optionSummary=0}]}
+2017-04-29 19:03:43 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 19:03:44 INFO  VotingClient:92 - Vote registered
+2017-04-29 19:03:44 INFO  VotingClient:72 - Testing show statistics for voting
+2017-04-29 19:03:44 INFO  VotingClient:78 - Statistics for voting: Who is the best player of the Premier League 2017
+2017-04-29 19:03:44 INFO  VotingClient:80 - Option Eden Hazard: 1 votes
+2017-04-29 19:03:44 INFO  VotingClient:80 - Option Harry Kane: 1 votes
+2017-04-29 19:03:44 INFO  VotingClient:80 - Option Romelu Lukaku: 0 votes
+2017-04-29 19:17:52 INFO  VotingClient:36 - Testing create voting
+2017-04-29 19:17:55 INFO  VotingClient:46 - Voting{votingTopic='Who is the best player of the Premier League 2017', votingLink='null', status='Created', optionList=[Option{optionText='Eden Hazard', optionSummary=0}, Option{optionText='Harry Kane', optionSummary=0}, Option{optionText='Romelu Lukaku', optionSummary=0}]}
+2017-04-29 19:17:55 INFO  VotingClient:50 - Testing start voting
+2017-04-29 19:17:55 INFO  VotingClient:54 - Voting Who is the best player of the Premier League 2017 started. Link for voting: http://localhost:8080/VotingTask/voting/15
+2017-04-29 19:17:55 INFO  VotingClient:58 - Testing close voting
+2017-04-29 19:17:55 INFO  VotingClient:62 - Voting Voting 1stopped.
+2017-04-29 19:17:55 INFO  VotingClient:66 - Testing find voting
+2017-04-29 19:17:55 INFO  VotingClient:68 - Voting{votingTopic='Who is the best player of the Premier League 2017', votingLink='http://localhost:8080/VotingTask/voting/15', status='Opened', optionList=[Option{optionText='Eden Hazard', optionSummary=1}, Option{optionText='Harry Kane', optionSummary=1}, Option{optionText='Romelu Lukaku', optionSummary=0}]}
+2017-04-29 19:17:55 INFO  VotingClient:85 - Testing register vote for option
+2017-04-29 19:17:55 INFO  VotingClient:92 - Vote registered
+2017-04-29 19:17:55 INFO  VotingClient:72 - Testing show statistics for voting
+2017-04-29 19:17:55 INFO  VotingClient:78 - Statistics for voting: Who is the best player of the Premier League 2017
+2017-04-29 19:17:55 INFO  VotingClient:80 - Option Eden Hazard: 2 votes
+2017-04-29 19:17:55 INFO  VotingClient:80 - Option Harry Kane: 2 votes
+2017-04-29 19:17:55 INFO  VotingClient:80 - Option Romelu Lukaku: 0 votes
