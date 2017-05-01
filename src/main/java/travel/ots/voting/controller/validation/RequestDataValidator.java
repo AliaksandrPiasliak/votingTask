@@ -1,11 +1,11 @@
-package travel.ots.voting.validation;
+package travel.ots.voting.controller.validation;
 
 import travel.ots.voting.entity.Option;
 import travel.ots.voting.entity.Vote;
 
 import java.util.List;
 
-public class Validator {
+public class RequestDataValidator {
 
     private static Integer MINIMUM_OPTIONS_NUMBER = 2;
     private static Integer MINIMUM_OPTIONS_FOR_VOTE_NUMBER = 1;
