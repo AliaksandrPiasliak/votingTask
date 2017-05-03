@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * Voting extends EntityObject<Long> - object representation of the voting entity of database.
+ *
+ */
 @Entity
 @Table(name = "voting")
 public class Voting extends EntityObject<Long> {
@@ -22,7 +26,26 @@ public class Voting extends EntityObject<Long> {
     @JsonIgnoreProperties("voting")
     private List<Option> optionList;
 
+    /**
+     * Default constructor of {@code Voting} object.
+     *
+     */
     public Voting(){}
+
+    /**
+     *
+     *
+     * @param id Voting ID.
+     * @param topic Voting topic.
+     * @param link Voting link.
+     * @param status Voting status.
+     */
+    public Voting(Long id, String topic, String link, String status){
+        super(id);
+        this.votingTopic = topic;
+        this.votingLink = link;
+        this.status = status;
+    }
 
 
     public String getVotingTopic() {

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
+/**
+ * Option extends EntityObject<Long> - object representation of the options entity of database.
+ *
+ */
 @Entity
 @Table(name = "options")
 public class Option extends EntityObject<Long> {
@@ -19,14 +23,28 @@ public class Option extends EntityObject<Long> {
     @JsonIgnoreProperties("optionList")
     private Voting voting;
 
+    /**
+     * Default constructor of {@code Option} object.
+     */
     public Option(){}
 
+    /**
+     *
+     * @param id ID of option.
+     * @param text Option text.
+     * @param summary Number of users, that chose that option.
+     */
     public Option(Long id, String text, Integer summary){
         super(id);
         this.optionText = text;
         this.optionSummary = summary;
     }
 
+    /**
+     *
+     * @param text Option text.
+     * @param summary Number of users, that chose that option.
+     */
     public Option( String text, Integer summary){
         this.optionText = text;
         this.optionSummary = summary;

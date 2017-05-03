@@ -2,6 +2,10 @@ package travel.ots.voting.entity;
 
 import java.util.List;
 
+/**
+ *
+ *
+ */
 public class Vote {
 
     private List<Long> optionsForVote;

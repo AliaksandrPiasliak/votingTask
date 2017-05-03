@@ -3,6 +3,12 @@ package travel.ots.voting.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * EntityObject - abstract class which responsible for entity objects in the application.
+ *
+ * @param <T> - type of domain object id.
+ *
+ */
 @MappedSuperclass
 public abstract class EntityObject<T extends Serializable>  {
 
@@ -11,8 +17,17 @@ public abstract class EntityObject<T extends Serializable>  {
     @Column(name = "id", nullable = false)
     private T id;
 
+    /**
+     * Default constructor of {@code EntityObject} object.
+     *
+     */
     public EntityObject(){}
 
+    /**
+     *
+     *
+     * @param id - ID of entity object.
+     */
     public EntityObject(T id){
         this.id = id;
     }

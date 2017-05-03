@@ -12,12 +12,18 @@ import travel.ots.voting.enumeration.VotingStatus;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * VotingClient - class, that tests voting application using {@code RestTemplate}
+ */
 @Component
 public class VotingClient {
 
     private static Logger logger = Logger.getLogger(VotingClient.class);
     private RestTemplate restTemplate;
 
+    /**
+     * Default constructor of {@code VotingClient} object.
+     */
     public VotingClient(){
         restTemplate = new RestTemplate();
     }
@@ -32,6 +38,9 @@ public class VotingClient {
         client.showStatistics();
     }
 
+    /**
+     * Tests creation of the voting.
+     */
     private void createVoting(){
         logger.info("Testing create voting");
         Voting voting = new Voting();
@@ -46,6 +55,9 @@ public class VotingClient {
         logger.info(createdVoting);
     }
 
+    /**
+     * Tests starting of the voting.
+     */
     private void startVoting(){
         logger.info("Testing start voting");
         HttpHeaders headers = new HttpHeaders();
@@ -54,6 +66,9 @@ public class VotingClient {
         logger.info("Voting " + voting.getVotingTopic() + " started. Link for voting: " + voting.getVotingLink());
     }
 
+    /**
+     * Tests closing of the voting.
+     */
     private void closeVoting(){
         logger.info("Testing close voting");
         HttpHeaders headers = new HttpHeaders();
@@ -62,18 +77,30 @@ public class VotingClient {
         logger.info("Voting " + voting.getVotingTopic() + "stopped.");
     }
 
+    /**
+     * Tests finding of the voting by its ID.
+     */
     private void findVoting(){
         logger.info("Testing find voting");
         Voting voting = restTemplate.getForObject("http://localhost:8080/VotingTask/voting/15", Voting.class);
         logger.info(voting);
     }
 
+    /**
+     * Tests showing statistics of votes for the voting.
+     */
     private void showStatistics(){
         logger.info("Testing show statistics for voting");
         Voting voting = restTemplate.getForObject("http://localhost:8080/VotingTask/voting/showStatistics/15", Voting.class);
         printStatistics(voting.getVotingTopic(),voting.getOptionList());
     }
 
+    /**
+     * Prints voting statistics.
+     *
+     * @param votingName - name of the voting.
+     * @param optionList - list of voting options
+     */
     private void printStatistics(String votingName, List<Option> optionList){
         logger.info("Statistics for voting: " + votingName);
         for(Option option : optionList){
@@ -81,6 +108,10 @@ public class VotingClient {
         }
     }
 
+    /**
+     * Tests register of the vote in the voting.
+     *
+     */
     private void registerVote(){
         logger.info("Testing register vote for option");
         Vote newVote = new Vote();
